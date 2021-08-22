@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.full-website{
+    width: 1080px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.section {
+    width: 30%;
+    background-color: #22e6d4;
+    height: 48px;
+    text-align: center;
+    float: left;
+}
+
+.section i {
+    font-size: 30px;
+    color: #0004fd;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px;
+    margin-top: -1px;
+}
+.all{
+    width: 100%;
+    height: 48px;
+    background-color: #22e6d4;
+}
+
+.menu{
+    width: 70%;
+    background-color: #22e6d4;
+    float: right;
+    height: 48px;
+}
+.menu ul{
+    list-style-type: none;
+    margin-left: 200px;
+}
+.menu ul li{
+}
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    float: left;
+    position: relative;
+}
+.menu ul li:hover>a{
+    color: #000;
+    background-color: #20ccbb;
+}
+
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: .6s;
+}
+
+.menu ul li ul{
+    position: absolute;
+    top: 47px;
+    left: 467px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+
+}
+
+.menu ul li ul li a{
+    color: #fff;
+    background-color: #22e6d4;
+    padding: 8px 20px;
+    border-bottom: 1px solid rgb(211, 189, 189);
+    display: block;
+}
+
+.menu ul .two ul{
+    position: absolute;
+    top: 46px;
+    left: 550px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+}
+
+.menu ul .two ul li a{
+    padding: 10px 30px;
+}
+
+
+.menu ul li a::after{
+    content: "";
+    width:0;
+    height:3px ;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40px;
+    left:7px;
+    transition: .5s;
+}
+
+.menu ul li a{
+    position: relative;
+}
+
+.menu ul li a:hover::after{
+     width: 80%;
+}
+
+.menu ul li ul li a::after{
+    content: "";
+    width:0;
+    height:0;
+}
+
+.background-img{
+    background-image: url(https://i.ibb.co/MBxsrQF/refat.png);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+}
+
+.background-img h2{
+    padding:10px;
+
+}
+
+.background-img p{
+    line-height:20px;
+}
+
+.container{
+    width: 100%;
+    height: 400px;
+    background-color: #81ecec;
+}
+.continer-1{
+    width: 65%;
+    height: 400px;
+    background-color:#81ecec;
+    float: left;
+}
+.continer-2{
+    width: 35%;
+    height: 400px;
+    background-color:#55efc4;
+    float: right;
+    text-align: center;
+}
+
+.continer-2 ul{
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.continer-2 h3{
+    padding: 20px;
+    color: #fd79a8;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.continer-2 p{
+    color:#d63031;
+    padding: 4px;
+}
+
+.continer-2 p::before{
+    content: "\f14a";
+    font-family:"Font Awesome 5 Free";
+    width: 400;
+    margin-right: 3px;
+    font-size: 20px;
+    color: #4834d4;
+}
+
+.continer-1 img{
+    width: 170px;
+    height: 170px;
+    margin: 40px;
+    float: left;
+    border: 2px solid rgb(255, 0, 242);
+}
+
+.continer-1 p{
+    margin-top: 50px;
+    margin-right:30px ;
+    color: #c0392b;
+    line-height: 20px;
+}
+
+.p-1{
+    margin-left: 20px;
+}
+
+.footer {
+    padding: 30px;
+    background-color: #000000d4;
+    color: #ffffff85;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.sarvice {
+    height: 237px;
+    width: 100%;
+}
+.sarvice h1{
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #00ff55;
+}
+
+.sarvice p{
+    margin-left: 20px;
+    line-height: 20px;
+    color: #000;
+    text-indent: 80px;
+
+}
+
+.sarvice p i{
+    margin-right: 2px;
+    color: #fd79a8;
+}
+.sarvice-1{
+    background-color: #e5ff00;
+    width: 30.33%;
+    float: left;
+    padding: 10px 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 10px 20px;
+}
+.sarvice-1 h2{
+    padding: 20px;
+    color: #ffffff;
+    margin-left: 70px;
+
+}
+
+.sarvice-2{
+    background-color: #e5ff00;
+    width: 30.33%;
+    float: left;
+    padding: 10px 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 10px  0 10px 0;
+}
+.sarvice-2 h2{
+    padding: 20px;
+    color: #ffffff;
+    margin-left: 100px;
+}
+
+.sarvice-3{
+    background-color: #e5ff00;
+    width: 30.33%;
+    float: left;
+    padding: 10px 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 10px  0 10px 20px;
+}
+.sarvice-3 h2{
+    padding: 20px;
+    color: #ffffff;
+    margin-left: 100px;
+}
